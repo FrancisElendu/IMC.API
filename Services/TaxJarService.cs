@@ -44,7 +44,7 @@ namespace IMC.API.Services
 
 
 
-        //First implemented it this way and later refactored to the code above
+        //First implemented it this way and later refactored to the code above for better functionality and reusability.
 
         //public async Task<TaxRate> GetTaxRates(string location)
         //{

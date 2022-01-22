@@ -41,33 +41,5 @@ namespace IMC.API.Services
             var order = JsonConvert.SerializeObject(salesTax);
             return await _client.Post<SalesTaxResponse>(url, order);
         }
-
-
-
-        //First implemented it this way and later refactored to the code above for better functionality and reusability.
-
-        //public async Task<TaxRate> GetTaxRates(string location)
-        //{
-        //    var url = $"{taxJarSettings.BaseUrl}rates/{ location}";
-        //    _client.DefaultRequestHeaders.Add("Accept", "application/json");
-        //    _client.DefaultRequestHeaders.Add("Authorization", "Bearer " + taxJarSettings.ApiKey);
-        //    var response = await _client.GetStringAsync(url);
-
-        //    return JsonConvert.DeserializeObject<TaxRate>(response);
-        //}
-
-        //public async Task<SalesTaxResponse> CalculateTax(SalesTax salesTax)
-        //{
-        //    var url = $"{taxJarSettings.BaseUrl}taxes";
-        //    _client.DefaultRequestHeaders.Add("Accept", "application/json");
-        //    _client.DefaultRequestHeaders.Add("Authorization", "Bearer " + taxJarSettings.ApiKey);
-
-        //    var order = JsonConvert.SerializeObject(salesTax);
-        //    var requestContent = new StringContent(order, Encoding.UTF8, "application/json");
-        //    var responseContent = await _client.PostAsync(url, requestContent);
-        //    responseContent.EnsureSuccessStatusCode();
-        //    var content = await responseContent.Content.ReadAsStringAsync();
-        //    return JsonConvert.DeserializeObject<SalesTaxResponse>(content);
-        //}
     }
 }

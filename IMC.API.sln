@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.API", "IMC.API.csproj", "{94ACE500-4510-4F6B-8900-F451343B7E71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMC.API", "IMC.API.csproj", "{94ACE500-4510-4F6B-8900-F451343B7E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.API.Tests", "..\IMC.API.Tests\IMC.API.Tests.csproj", "{32649566-8389-4BA6-9374-0D68EBA7AB48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{94ACE500-4510-4F6B-8900-F451343B7E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94ACE500-4510-4F6B-8900-F451343B7E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94ACE500-4510-4F6B-8900-F451343B7E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32649566-8389-4BA6-9374-0D68EBA7AB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32649566-8389-4BA6-9374-0D68EBA7AB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32649566-8389-4BA6-9374-0D68EBA7AB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32649566-8389-4BA6-9374-0D68EBA7AB48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
